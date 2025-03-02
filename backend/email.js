@@ -3,7 +3,7 @@ const { transporter } = require("./email.config");
 const sendVerificationCode = async (email, verificationCode) => {
     try {
         const response = await transporter.sendMail({
-            from: '"Blemishbot" <nummad222@gmail.com>',
+            from: '"Wellness Wiz" <nummad222@gmail.com>',
             to: email,
             subject: 'Verify your email',
             text: "Verify your email",
@@ -18,7 +18,7 @@ const sendVerificationCode = async (email, verificationCode) => {
 const sendFeedback = async (email, message, name) => {
     try {
         const response = await transporter.sendMail({
-            from: '"Blemishbot" <nummad222@gmail.com>', 
+            from: '"Wellness Wiz" <nummad222@gmail.com>', 
             to: "nummad222@gmail.com",
             subject: 'User feedback',
             text: "User feedback",
